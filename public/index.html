@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website with Payment</title>
+    <!-- Link to css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- Navbar-->
+    <header>
+        <!-- Nav-->
+        <div class="nav container">
+            <!-- Logo-->
+            <a href="#" class="logo">E-Commerce</a>
+            <!-- Cart Icon-->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content"> </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- Close Cart -->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Products -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Shop Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripw checkout page we have to upload on ine -->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrOpk33iZvjLVsAgVFpqzS6zwRiB-ryEQhtQ3tD_Qii3hPQJtT6J0Xyfx9tmyFkGEb6CT1hZA7bFrIuDD3qx0gC0jYT0FY7n_8mUreJz-o6fx5YtlXpWJe85JbK7jJwJqw1fGWge1i34TgNzm-7jasJVHKmGlRAF-9HsGPio8hfdKXei5RDP3VOMeT29k/s840/product1.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">ADICOLOR SEASONAL</h2>
+                <span class="price">$50</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwfNM-7eE-Eynl-mVxrRTHFAiOjAvZxVDqfeuT26eA0ChcLuncnPMTUcjXMun_Xda2qNa5RbogrV-exBI836hdSo3szcMZjpUvrq3tguhjy-gQ9tFgMm3uQgmrL90TfHSEwmAzU2N8jbrMJjUVZiY-n_Wps8gT0p-lVqda2VXuR0OIgPKqJX_Fk5n6hYw/s320/product2.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">SATURDAY BACKPACK</h2>
+                <span class="price">$69</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+             <!-- Box 3 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSJZPMsrU-nPKcsuc8MMhGzzEpZnKQjtMQBL8-U-0QbM0c13__YyNTGyv46dwwtmDTT9mcFb4MFP608O7hHvdVJulkw6Mbdm-IFLDshUp2MNxcT7Jv1WQUDHHI3pFA8UrEtBGAcyenX3tSD4nNR6kW5pYYyS6vNo0T-V7C3p1vushvh_HyDADUDB84-P0/s320/product3.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">ULTIMATE CAP</h2>
+                <span class="price">$14</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+             <!-- Box 4 -->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggKWD3pXbaHOUvD_m2xIg2GKnHKTh893l2cYOxuSCOF3XOysv9-Vwd-lM95czR1n_9bLyDiNtVkcIk7oBkrPkT_VpzeyFvRD_ZiJcWxcp0BhnZm679khOqKOeHIJqliRqpDb0K-KtMVVSsuJHhNve7_MAhZFj541I9WPyxO9WszplBvOz-bFcdlb-dgkg/s320/product4.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">CR7 GOAT TEE</h2>
+                <span class="price">$49</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+             <!-- Box 5 -->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuYVIPKsX8HHqnYeFZBwqss4iy-NE-3TbLcY5FRw6wXrLCN_fGnZ6Dl6kqyl35GNWuNSGqS0zcxeFv9ztGC9-WPXhH3Ga_6AxdmjAmBmPH4U1ZBMwQEmnzBxDGTrcSDVgTxG0pbJj9Y4LbkhjYCfbiHGYRVjtpJwiQWmTPU-OOtjZnttLMHFD6IDtQhc0/s320/product5.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">ADICOLOR HODDIE</h2>
+                <span class="price">$84</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+             <!-- Box 6 -->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsmg72PicQdHuyHFfHbvnG0UPL2s7d0q6Q-fTzaUxViJuJ3AKIRWQsCXYkn8gQ2YgEFWo_TNbq6PtU3BImczukxDI8QBzxzjamQ0dlCgUTopEW17ZFPPetereVl0SfrC0pW5X8cqCiU67qpN6SgTiFLJtIVaV_rA-Z-y8PLOf5nM4qyuUoTbpG_etqD6k/s320/product6.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">ADICOLOR EARBUDS</h2>
+                <span class="price">$200</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+             <!-- Box 7 -->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjquZ2k1Qi0yDJg-CTBhFKzj5QB6GbmYv8WnOKms78ruIvNie7_nnrm6o65ap8Ofn5Z6-ZX6l2M57GsYn-Cdc1AHF3B1oMtlunjir41wrL4jvZYgRC5MyAdlnxkvbKxZjTAyPRjHa6Fqw0LuqbtJAW4he8_PU9UcnEIjYJ_OJQPUjDV-HkAxAQHOn2aX2s/s320/product7.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">METAL BOTTLE 1L</h2>
+                <span class="price">$80</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+             <!-- Box 8 -->
+             <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVB8jLwGuWMIgomJj8rHg2hEnO8vm93xFYqISoQauHW3ypP5B1DXk0VTaFwnwPmWEW27jj7LcvlOSZQ2_wc3HKZPNXavdZcKDCiV3uqxVq-CvdUQSjAHrKvXE8smNvpjLfah2yKx-DJCevbmoy5NzUGP7lVKg5oO6oAIeb891RyfLE8hOHDirrdRIbtR8/s320/product8.jpeg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">ULTRABOOST SHOES</h2>
+                <span class="price">$284</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+
+        </div>
+    </section>
+    <!-- Link to JS -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
